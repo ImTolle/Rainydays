@@ -1,0 +1,13 @@
+body {
+    background-color: whitesmoke;
+    font-family: Open Sans, Verdana, Tahoma, sans-serif;
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+nav {
+    background-color: turquoise;
+    margin: 0px 0px;
+    border: 50px black;
+}
