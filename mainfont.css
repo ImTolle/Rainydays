@@ -1,3 +1,4 @@
+
 body {
     background-color: whitesmoke;
     font-family: Open Sans, Verdana, Tahoma, sans-serif;
@@ -6,8 +7,19 @@ nav li {
     display: inline-block;
     padding: 10px;
 }
-nav {
-    background-color: turquoise;
-    margin: 0px 0px;
-    border: 50px black;
+
+img {
+    height: 300px;
+    width: 500px;
 }
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 10px;
+    min-height: 400px;
+  }
+  
+  .container nav {
+    background: lightblue;
+  }
