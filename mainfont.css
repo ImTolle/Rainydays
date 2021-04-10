@@ -3,11 +3,25 @@ nav,header,main,aside,footer,section {
     border: 2px solid #FE6700;
   }
   
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
   nav {
     min-height: 30px;
-    
+    background-color: whitesmoke;
   }
-  
+
+  li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
   header, footer, aside {
     min-height: 100px;
   }
@@ -23,7 +37,6 @@ nav,header,main,aside,footer,section {
   .home-section:nth-child(1){grid-area: home-section-one;}
   .home-section:nth-child(2){grid-area: home-section-two;}
   .home-section:nth-child(3){grid-area: home-section-three;}
-  .home-section:nth-child(4){grid-area: home-section-four;}
   .home-section:nth-child(5){grid-area: home-section-five;}
   .home-section:nth-child(6){grid-area: home-section-six;}
   .home-section:nth-child(7){grid-area: home-section-seven;}
@@ -46,10 +59,25 @@ nav,header,main,aside,footer,section {
       padding: 10px;
       grid-template-areas: 
       'home-section-one home-section-two home-section-three'
-      'home-section-four home-section-four home-section-four'
       'home-section-five home-section-six home-section-seven'
   }
-  .imgone{
-      height: 100px;
-      width: 150px;
+
+  .logo {
+    object-fit: cover;
+    width: 25%;
+    height: 25%;
+    display: flex 1;
+    float: right;
   }
+
+  .jacket {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex 1;
+    float: left;
+  }
+  
+  footer::before, footer::after{
+    content: '/';
+}
