@@ -1,11 +1,11 @@
 nav,header,main,aside,footer,section {
-    background: #FFF2EA;
-    border: 2px solid #FE6700;
+    background: beige;
+    border: 2px solid lightblue;
   }
   
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: beige;
+    background-color: whitesmoke;
   }
 
   h1 {
@@ -14,7 +14,6 @@ nav,header,main,aside,footer,section {
 
   nav {
     min-height: 30px;
-    background-color: whitesmoke;
   }
 
   li {
@@ -50,7 +49,7 @@ nav,header,main,aside,footer,section {
       'nav nav'
       'header header'
       'main aside'
-      'footer footer'
+      'footer aside'
   }
   
   main {
@@ -62,12 +61,31 @@ nav,header,main,aside,footer,section {
       'home-section-five home-section-six home-section-seven'
   }
 
+  .buy {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .center {
+   text-align: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+  }
+
   .logo {
     object-fit: cover;
     width: 25%;
     height: 25%;
     display: flex 1;
     float: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
 
   .jacket {
@@ -77,7 +95,8 @@ nav,header,main,aside,footer,section {
     display: flex 1;
     float: left;
   }
+
+ .copyright {
+   float:left
+ }
   
-  footer::before, footer::after{
-    content: '/';
-}
