@@ -6,8 +6,6 @@
 
   h1 {
     text-align: center;
-    display: grid;
     margin: auto;
-    padding: 25px;
-    color: #0A3641;
+    color: black;
   }
