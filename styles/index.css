@@ -1,6 +1,6 @@
 nav,header,main,aside,footer,section {
     background: beige;
-    border: 2px solid lightblue;
+    border: 2px solid #0A3641;
   }
   
   body {
@@ -10,6 +10,11 @@ nav,header,main,aside,footer,section {
 
   h1 {
     text-align: center;
+    float: left;
+    display: grid;
+    margin: auto;
+    padding: 25px;
+    color: #0A3641;
   }
 
   nav {
@@ -61,8 +66,8 @@ nav,header,main,aside,footer,section {
       'home-section-five home-section-six home-section-seven'
   }
 
-  .buy {
-    background-color: black;
+  button {
+    background-color: #0A3641;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -70,6 +75,11 @@ nav,header,main,aside,footer,section {
     text-decoration: none;
     font-size: 16px;
     border-radius: 8px;
+    
+  }
+
+  .browse:hover {
+    background-color: green;
   }
 
   .center {
@@ -86,6 +96,7 @@ nav,header,main,aside,footer,section {
     float: right;
     padding-right: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   .jacket {
