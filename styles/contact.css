@@ -20,8 +20,13 @@ nav,header,main,aside,footer,section {
   nav {
     min-height: 30px;
   }
+
+  .block{
+    display: inline-block;
+    padding-right: 20px;
+  }
   
-  li {
+  .circle {
     list-style-type: circle;
   }
   
