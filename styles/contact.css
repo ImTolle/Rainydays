@@ -22,18 +22,13 @@ nav,header,main,aside,footer,section {
   }
   
   li {
-    display: inline-block;
-    padding-right: 20px;
+    list-style-type: circle;
   }
   
   header, footer, aside {
     min-height: 100px;
   }
   
-  footer {
-      size:unset
-  }
-
   .home-section {
     background: #FFF;
     min-height: 100px;
@@ -52,27 +47,32 @@ nav,header,main,aside,footer,section {
       'nav nav'
       'header header'
       'main aside'
-      'main footer'
+      'main aside'
+      'footer footer'
   }
   
   main {
       display: grid;
       grid-gap: 10px;
       padding: 10px;
-      
+      grid-template-areas: 
+      'home-section-one home-section-two home-section-three'
+      'home-section-four home-section-five home-section-six'
+      'home-section-seven home-section-eight home-section-nine'
+      'home-section-ten home-section-elleven home-section-twelve'
   }
   
   button {
     background-color: #0A3641;
     border: none;
     color: white;
-    padding: 24px 48px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     border-radius: 8px;
-    display: flex;
-    margin: auto;
+    margin: 10px 10px 10px 40px;
+    
   }
   
   .browse:hover {
@@ -86,7 +86,7 @@ nav,header,main,aside,footer,section {
   }
   
   .logo {
-    object-fit: contain;
+    object-fit: cover;
     width: 90%;
     height: 90%;
     display: flex 1;
@@ -94,27 +94,19 @@ nav,header,main,aside,footer,section {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
-    }
-
-  .radio {
-      text-align: center;
-      margin: auto;
-      padding: 15px;
-      color: #0A3641;
   }
-
+  
   .jacket {
-    object-fit: contain;
-    margin:auto;
-    width: 75%;
-    height: 75%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     display: flex 1;
     float: left;
-    padding-bottom: 10%;
   }
   
   .text {
     color: #0A3641;
     text-align: center;
     padding: 5px;
+    margin: auto;
   }
